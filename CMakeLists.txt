@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 
-set(CMAKE_C_FLAGS "-Wall -std=gnu99")
-set(CMAKE_C_FLAGS_RELEASE "-Werror")
-
 project(heisenbergfs)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -std=gnu99")
+set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -Werror")
 
 find_package(PkgConfig)
 
